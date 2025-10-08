@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    transition: background-color 0.5s;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #212121;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Set the background color for each button based on its ID */
+#grey {
+    background: grey;
+}
+
+#white {
+    background: white;
+}
+
+#blue {
+    background: blue;
+}
+
+#yellow {
+    background: yellow;
+}
