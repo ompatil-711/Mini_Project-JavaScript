@@ -1,0 +1,322 @@
+/* sytle.css - styles for Number guessing game */
+
+/* Base / Reset */
+/* sytle.css - styles for Number guessing game */
+
+/* Base / Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #2f2f2f; /* dark gray background */
+  color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  line-height: 1.4;
+}
+
+/* Page wrapper */
+#wrapper {
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  background: linear-gradient(#3a3a3a, #2e2e2e);
+  border-radius: 8px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border-top: 6px solid #111; /* top bar like screenshot */
+}
+
+/* Top title bar effect */
+#wrapper h1 {
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  margin: -40px -30px 18px -30px;
+  padding: 10px 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+/* Intro paragraphs */
+#wrapper p {
+  color: #e0e0e0;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Big "Guess a number" label */
+label#guess {
+  display: block;
+  font-size: 64px;
+  font-weight: 300;
+  color: #f5f5f5;
+  margin: 24px 0 18px;
+  letter-spacing: -1px;
+}
+
+/* Form layout */
+.form {
+  margin-bottom: 22px;
+}
+
+/* Input field */
+input#guessField {
+  display: block;
+  width: 70%;
+  max-width: 360px;
+  height: 44px;
+  margin: 0 auto 18px;
+  padding: 8px 12px;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 6px solid #dcdcdc; /* white inset look like screenshot */
+  background: #ffffff;
+  color: #111;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Submit button */
+input.guessSubmit,
+input#subt {
+  display: inline-block;
+  width: 220px;
+  height: 46px;
+  margin: 6px auto 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #111; /* dark button */
+  color: #fff;
+  box-shadow: 0 6px 0 #0b0b0b, inset 0 -3px 0 rgba(0,0,0,0.25);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+/* Button hover / active */
+input.guessSubmit:hover,
+input#subt:hover {
+  transform: translateY(-1px);
+}
+
+input.guessSubmit:active,
+input#subt:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 0 #0b0b0b;
+}
+
+/* Result paragraphs */
+.resultParas {
+  margin-top: 8px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.resultParas p {
+  margin: 8px 0;
+}
+
+/* Spans that update dynamically */
+.resultParas .guesses,
+.resultParas .lastResult {
+  display: inline-block;
+  min-width: 26px;
+  text-align: left;
+  margin-left: 6px;
+  color: #f0f0f0;
+  background: rgba(255,255,255,0.06);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Low/High message */
+p.lowOrHi {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #ffd166; /* highlight color for messages */
+  min-height: 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 420px) {
+  label#guess {
+    font-size: 44px;
+  }
+  input#guessField {
+    width: 86%;
+  }
+  input.guessSubmit {
+    width: 86%;
+  }
+}
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #2f2f2f; /* dark gray background */
+  color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  line-height: 1.4;
+}
+
+/* Page wrapper */
+#wrapper {
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  background: linear-gradient(#3a3a3a, #2e2e2e);
+  border-radius: 8px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border-top: 6px solid #111; /* top bar like screenshot */
+}
+
+/* Top title bar effect */
+#wrapper h1 {
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  margin: -40px -30px 18px -30px;
+  padding: 10px 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+/* Intro paragraphs */
+#wrapper p {
+  color: #e0e0e0;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Big "Guess a number" label */
+label#guess {
+  display: block;
+  font-size: 64px;
+  font-weight: 300;
+  color: #f5f5f5;
+  margin: 24px 0 18px;
+  letter-spacing: -1px;
+}
+
+/* Form layout */
+.form {
+  margin-bottom: 22px;
+}
+
+/* Input field */
+input#guessField {
+  display: block;
+  width: 70%;
+  max-width: 360px;
+  height: 44px;
+  margin: 0 auto 18px;
+  padding: 8px 12px;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 6px solid #dcdcdc; /* white inset look like screenshot */
+  background: #ffffff;
+  color: #111;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Submit button */
+input.guessSubmit,
+input#subt {
+  display: inline-block;
+  width: 220px;
+  height: 46px;
+  margin: 6px auto 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #111; /* dark button */
+  color: #fff;
+  box-shadow: 0 6px 0 #0b0b0b, inset 0 -3px 0 rgba(0,0,0,0.25);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+/* Button hover / active */
+input.guessSubmit:hover,
+input#subt:hover {
+  transform: translateY(-1px);
+}
+
+input.guessSubmit:active,
+input#subt:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 0 #0b0b0b;
+}
+
+/* Result paragraphs */
+.resultParas {
+  margin-top: 8px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.resultParas p {
+  margin: 8px 0;
+}
+
+/* Spans that update dynamically */
+.resultParas .guesses,
+.resultParas .lastResult {
+  display: inline-block;
+  min-width: 26px;
+  text-align: left;
+  margin-left: 6px;
+  color: #f0f0f0;
+  background: rgba(255,255,255,0.06);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Low/High message */
+p.lowOrHi {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #ffd166; /* highlight color for messages */
+  min-height: 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 420px) {
+  label#guess {
+    font-size: 44px;
+  }
+  input#guessField {
+    width: 86%;
+  }
+  input.guessSubmit {
+    width: 86%;
+  }
+}
